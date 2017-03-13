@@ -1,6 +1,4 @@
-
 body {
-  /*overflow: hidden;*/
   text-align: center;
 }
 
@@ -22,12 +20,29 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-nav ul{
-    padding: 0;
+/**hover effect using jquery for nav bar**/
+
+.hoverEffect:hover {
+    border-bottom: 2px solid grey;
+    -webkit-transition: border-bottom 300ms linear;
+    -moz-transition: border-bottom 300ms linear;
+    -o-transition: border-bottom 300ms linear;
+    -ms-transition: border-bottom 300ms linear;
+    transition: border-bottom 300ms linear;
+}
+, nav a .hoverEffectSelect {
+    border-bottom: 2px solid #666666;
 }
 
-nav li{
+.hoverEffectSelect {
+    border-bottom: 2px solid grey;
+}
+
+
+nav a{
+  padding: 0;
   color: #666666;
+  text-decoration: none;
   display: inline-block;
   font-family: 'Pompiere', cursive;
   font-size: 25px;
@@ -36,6 +51,8 @@ nav li{
   margin: 20px;
   text-transform: uppercase;
 }
+
+/**box column**/
 
 .content-box {
     padding: 0;
@@ -66,10 +83,25 @@ nav li{
   text-align: center;
 }
 
+/**blockquote styling**/
+
 .quote {
   font-family: 'Pompiere', cursive;
   font-style: italic;
   font-size: 50px;
   padding-top: 60px;
+}
 
+/**about page image**/
+img {
+  display: block;
+  margin: 0px 0px 30px 0px;
+  max-width: 150px;
+  border-radius: 100%;
+  padding: 50px;
+}
+
+#thumbnail {
+  max-width: 1000px;
+  margin: 0 auto;
 }
