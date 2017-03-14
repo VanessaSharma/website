@@ -77,8 +77,8 @@ nav a{
 .quote {
   font-family: 'Pompiere', cursive;
   font-style: italic;
-  font-size: 50px;
-  padding-top: 60px;
+  font-size: 40px;
+  padding-top: 10px;
 }
 
 /**about page image**/
@@ -86,7 +86,7 @@ img {
   display: block;
   max-width: 150px;
   border-radius: 100%;
-  padding: 50px;
+  padding: 30px;
   margin-left: auto;
   margin-right: auto
 }
@@ -116,9 +116,19 @@ p{
   border-radius: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+
+section p{
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 20px;
 }
 
 footer p{
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin: auto;
+  font-size: 20px;
+  padding-top: 10px;
 }
