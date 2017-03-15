@@ -143,14 +143,54 @@ footer p{
 }
 
 img{
-  border-radius: 0%;
+  /*border-radius: 0%;*/
   max-width: 800px;
   max-height: 250px;
+  margin: 0;
 }
 
-/*******************************/
-function positionTooltip(event){
-    var tPosX = event.pageX - 10;
-    var tPosY = event.pageY - 100;
-    $('div.tooltip').css({'position': 'absolute', 'top': tPosY, 'left': tPosX});
-};
+/**Octocat hover popup**/
+#popup { color: #000; background-color: ; }
+
+#popup a, #popup a:visited {
+	position: relative;
+	display: block;
+	width: 130px;
+	line-height: 30px;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	/*border: 1px solid #666;*/
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#popup a span {
+	display: none;
+}
+
+#popup img:hover {
+	background-color: none;
+}
+
+* the IE correction rule */
+#popup img:hover	{
+	color: #f00;
+	background-color: pink;
+	text-indent: 0; /* added the default value */
+}
+
+#popup a:hover span {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 170px;
+	width: 320px;
+	margin: 0px;
+	padding: 10px;
+	font-weight: normal;
+	background: pink;
+	text-align: left;
+	border: 1px solid #666;
+}
