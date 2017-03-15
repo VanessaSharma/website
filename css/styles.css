@@ -142,12 +142,15 @@ footer p{
   padding-top: 10px;
 }
 
-img{
-  /*border-radius: 0%;*/
+img {
   max-width: 800px;
   max-height: 250px;
-  margin: 0;
-}
+  display: block;
+  margin-top: 30%;
+  margin-left: -60%;
+  margin-right: -50%;
+  justify-content: center;
+  }
 
 /**Octocat hover popup**/
 #popup { color: #000; background-color: ; }
@@ -188,9 +191,12 @@ img{
 	left: 170px;
 	width: 320px;
 	margin: 0px;
-	padding: 10px;
-	font-weight: normal;
-	background: pink;
+	padding: 20px;
+	font-weight: bold;
+  color: white;
+  font-family: 'Pompiere', cursive;
+	background: lightblue;
 	text-align: left;
 	border: 1px solid #666;
+  border-radius: 80%;
 }
