@@ -7,5 +7,5 @@ $(document).ready(function () {
         $(this).removeClass("hoverEffectSelect");
         $home.addClass("hoverEffectSelect");
     });
-    
+
 });

@@ -27,6 +27,9 @@ body {
     border-bottom: 2px solid grey;
 }
 
+footer br {
+  padding-top: 60xp;
+}
 
 nav a{
   padding: 0;
@@ -82,7 +85,7 @@ nav a{
 }
 
 /**about page image**/
-img {
+section img{
   display: block;
   max-width: 150px;
   border-radius: 100%;
@@ -126,9 +129,28 @@ section p{
   font-size: 20px;
 }
 
+footer{
+  padding-top: 0px;
+  margin: auto;
+  display: inline-block;
+}
+
 footer p{
   max-width: 600px;
   margin: auto;
   font-size: 20px;
   padding-top: 10px;
 }
+
+img{
+  border-radius: 0%;
+  max-width: 800px;
+  max-height: 250px;
+}
+
+/*******************************/
+function positionTooltip(event){
+    var tPosX = event.pageX - 10;
+    var tPosY = event.pageY - 100;
+    $('div.tooltip').css({'position': 'absolute', 'top': tPosY, 'left': tPosX});
+};
